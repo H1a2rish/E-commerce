@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css.css">
+    <style>
+        .rate button {
+            color: white; /* Set star color to white */
+        }
+        .wishlist {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(248, 248, 248, 0);
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+    <header>
+        <div class="container">
+            <h1>ShopEasy</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Search products..." id="searchInput">
+                <button onclick="handleSearch()">Search</button>
+            </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+            <li><a href="log.html"><i class="fas fa-user"></i> Login</a></li>
+            <li><a href="reg.html"><i class="fas fa-user-plus"></i> Register</a></li>
+        </ul>
+    </nav>
+
+        </div>
+    </header>
+    <h2>Featured Products</h2><br>
+        <section class="featured-products">
+            <div class="product" style="position: relative;">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+                <img src="ProductImages/Screenshot 2025-03-09 151622.png" alt="Earbuds">
+                <figcaption><strong>CMF Earbuds</strong></figcaption>
+                <p>From 999/-</p>
+                <div class="rate" style="text-align: left;"><button class="rating-4" style="background-color: green;"><i class="fas fa-star"></i> 4.0</button></div>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product" style="position: relative;">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+                <img src="ProductImages/Screenshot 2025-03-09 144239.png" alt="EarBuds">
+                <figcaption><strong>Mivi Wireless Buds</strong></figcaption>
+                <p>Up to 80% off</p>
+                <div class="rate" style="text-align: left;"><button class="rating-4" style="background-color: green;"><i class="fas fa-star"></i> 4.0</button></div>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product" style="position: relative;">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+                <img src="ProductImages/Screenshot 2025-03-09 144759.png" alt="EarBuds">
+                <figcaption><strong>Wireless Earbuds</strong></figcaption>
+                <p>Up to 70% off</p>
+                <div class="rate" style="text-align: left;"><button class="rating-4" style="background-color: green;"><i class="fas fa-star"></i> 4.0</button></div>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product" style="position: relative;">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+                <img src="ProductImages/Screenshot 2025-03-09 153850.png" alt="Taco Salad">
+                <figcaption><strong>SAMSUNG Galaxy Buds Fan Edition(FE)</strong></figcaption>
+                <p>Up to 40% off</p>
+                <div class="rate" style="text-align: left;"><button class="rating-4" style="background-color: green;"><i class="fas fa-star"></i> 4.0</button></div>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product" style="position: relative;">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+                <img src="ProductImages/Screenshot 2025-03-09 154057.png" alt="Nachos">
+                <figcaption><strong>Everyday Earbuds</strong></figcaption>
+                <h3>$66</h3><subscripted><del>$99</del></subscripted>&nbsp;40%off</h3>
+                <div class="rate" style="text-align: left;"><button class="rating-4" style="background-color: green;"><i class="fas fa-star"></i> 4.0</button></div>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product" style="position: relative;">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+                <img src="ProductImages/Screenshot 2025-03-09 154255.png" alt="Nachos">
+                <h3></h3>
+                <figcaption><strong>CMF Buds Case Cover</strong></figcaption>
+                <div class="rate" style="text-align: left;"><button class="rating-4" style="background-color: green;"><i class="fas fa-star"></i> 4.0</button></div>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product" style="position: relative;">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+                <img src="ProductImages/Screenshot 2025-03-09 154517.png" alt="Nachos">
+                <h3></h3>
+                <figcaption><strong>CMF Watch Pro 2025</strong></figcaption>
+                <div class="rate" style="text-align: left;"><button class="rating-4" style="background-color: green;"><i class="fas fa-star"></i> 4.0</button></div>
+                <p><button>buy $14</button>&nbsp;&nbsp;<button>Add to Cart</button></p>
+            </div>
+            <div class="product" style="position: relative;">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+                <img src="ProductImages/Screenshot 2025-03-09 154741.png" alt="Nachos">
+                <h3></h3>
+                <figcaption><strong>CMF Watch Pro 2 </strong></figcaption>
+                <div class="rate" style="text-align: left;"><button class="rating-4" style="background-color: green;"><i class="fas fa-star"></i> 4.0</button></div>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product" style="position: relative;">
+                <button class="wishlist"><i class="fas fa-heart"></i></button>
+                <img src="ProductImages/Screenshot 2025-03-09 154903.png" alt="Nachos">
+                <h3></h3>
+                <figcaption><strong>Smartwatch</strong></figcaption>
+                <div class="rate"><button class="rating-4" style="background-color: green;"><i class="fas fa-star"></i> 4.0</button></div>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
