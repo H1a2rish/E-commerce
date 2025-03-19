@@ -5,78 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Page</title>
     <link rel="stylesheet" href="css.css">
+    <style>
+    .product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+}
+.product-content {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+}
+.product-content img {
+    width: 150px; /* Set a fixed width for the image */
+    margin-right: 20px; /* Space between image and text */
+}
+.product-details {
+    text-align: left; /* Align text to the left */
+}
+
+    </style>
 </head>
 <body>
-    
     <header>
-        <h1>Shop Products</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="wishlist.html">Wishlist</a></li>
-                <li><a href="orders.html">Orders</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>ShopEasy</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Search products..." id="searchInput">
+                <button onclick="handleSearch()">Search</button>
+            </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="orderes.html"><i class="fas fa-store"></i>orderes</a></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+        </ul>
+    </nav>
+        </div>
     </header>
     <main>
         <section class="featured-products">
-            <div class="product">
-                <img src="ProductImages/Screenshot 2025-03-09 151622.png" alt="Earbuds">
-                <figcaption><strong>CMF Earbuds</strong></figcaption>
-                <p>CMF Buds Wireless Bluetooth Earbuds, 42dB Noise Cancelling Earbuds, Dirac HD Audio, 35.5H Playtime, BT5.3, IP54 Waterproof, 4HD Mics Wireless Headphones for iPhone & Android (Orange)</p>
-                <p><b>Price</b>:Rs.999/-</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="ProductImages/Screenshot 2025-03-09 144239.png" alt="EarBuds">
-                <figcaption><strong>Mivi Wireless Buds</strong></figcaption>
-                <p>Wireless Earbuds Bluetooth 5.4 Headphones Bass Stereo Ear Buds with Noise Cancelling Mic LED Display in Ear Earphones IP7 Waterproof 36H Playtime for Laptop...</p>
-                <p><b>Color</b>:White</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="ProductImages/Screenshot 2025-03-09 144759.png" alt="EarBuds">
-                <p>Wireless Earbuds, Bluetooth Headphones 5.4 with ENC Noise Cancelling Mics, 40H Bluetooth Ear buds Stereo Bass with Dual LED Display Charging Case, IP7 Waterproof Wireless Earphones for Android, iOS</p>
-                    <br><b>Price</b>:Rs.1499/-</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="ProductImages/Screenshot 2025-03-09 153850.png" alt="Taco Salad">
-                <p>SAMSUNG Galaxy Buds Fan Edition(FE) SM-R400, Active Noise-Cancelling, Wireless Bluetooth v5.2 Earbuds, Android 8.0 and Up - (Graphite)</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="ProductImages/Screenshot 2025-03-09 154057.png" alt="Nachos">
-                <h3></h3>
-                <p>Raycon Everyday Earbuds (2024 Edition) - Bluetooth True Wireless in-Ear Buds with 32 Hours Playtime, Multpoint Technology, Extreme Comfort, and Active Noise Cancellation (Blush Violet)</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="ProductImages/Screenshot 2025-03-09 154255.png" alt="Nachos">
-                <h3></h3>
-                <p>for CMF Buds Case Cover, Hard PC Shell Clear Protective Earbuds Case, Only Compatible with CMF Buds, Headphones Case with Lanyard Accessories Set</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="ProductImages/Screenshot 2025-03-09 154517.png" alt="Nachos">
-                <h3></h3>
-                <p>CMF Watch Pro 2025 Upgrade Smart Watch, Fitness Tracker, Heart Rate SpO2 Sleep Monitor,1.96" AMOLED Display, Bluetooth Calls with AI Noise Reduction,13 Days Long Battery, IP68 Water Resistance (Black)
-                </p>
-                <p><button>buy $14</button>&nbsp;&nbsp;<button>Add to Cart</button></p>
-            </div>
-            <div class="product">
-                <img src="ProductImages/Screenshot 2025-03-09 154741.png" alt="Nachos">
-                <h3></h3>
-                <p>CMF Watch Pro 2 Smartwatch for Men Women, Fitness Tracker with Heart Rate, SPO₂ Monitoring,120 Sports Model, Bluetooth Calls with AI Noise Reduction, IP68 Waterproof with GPS for Android iOS Ash Grey</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="ProductImages/Screenshot 2025-03-09 154903.png" alt="Nachos">
-                <h3></h3>
-                <p>Smartwatch, Built-in Alexa, GPS, VO2 Max, HRV, Blood Oxygen, Sleep Monitoring, Women's Health, Custom Reminders, Sports Tracking, 1.32" AMOLED, Compass, Altimeter (Bluetooth, Gold, 43mm)</p>
-                <div class="button"><button>Add to Cart</button></div>
-                
-            </div>
+<div class="product">
+    <div class="product-content">
+        <img src="ProductImages/Screenshot 2025-03-09 151622.png" alt="Earbuds">
+        <div class="product-details">
+            <figcaption><strong>CMF Earbuds</strong></figcaption>
+            <p>CMF Buds Wireless Bluetooth Earbuds, 42dB Noise Cancelling Earbuds, Dirac HD Audio, 35.5H Playtime, BT5.3, IP54 Waterproof, 4HD Mics Wireless Headphones for iPhone & Android (Orange)</p>
+            <p><b>Price</b>:Rs.999/-</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<div class="product">
+    <div class="product-content">
+        <img src="ProductImages/Screenshot 2025-03-09 144239.png" alt="EarBuds">
+        <div class="product-details">
+            <figcaption><strong>Mivi Wireless Buds</strong></figcaption>
+            <p>Wireless Earbuds Bluetooth 5.4 Headphones Bass Stereo Ear Buds with Noise Cancelling Mic LED Display in Ear Earphones IP7 Waterproof 36H Playtime for Laptop...</p>
+            <p><b>Color</b>:White</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<div class="product">
+    <div class="product-content">
+        <img src="ProductImages/Screenshot 2025-03-09 144759.png" alt="EarBuds">
+        <div class="product-details">
+            <p>Wireless Earbuds, Bluetooth Headphones 5.4 with ENC Noise Cancelling Mics, 40H Bluetooth Ear buds Stereo Bass with Dual LED Display Charging Case, IP7 Waterproof Wireless Earphones for Android, iOS</p>
+            <br><b>Price</b>:Rs.1499/-</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<div class="product">
+    <div class="product-content">
+        <img src="ProductImages/Screenshot 2025-03-09 153850.png" alt="Taco Salad">
+        <div class="product-details">
+            <p>SAMSUNG Galaxy Buds Fan Edition(FE) SM-R400, Active Noise-Cancelling, Wireless Bluetooth v5.2 Earbuds, Android 8.0 and Up - (Graphite)</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<div class="product">
+    <div class="product-content">
+        <img src="ProductImages/Screenshot 2025-03-09 154057.png" alt="Nachos">
+        <div class="product-details">
+            <h3></h3>
+            <p>Raycon Everyday Earbuds (2024 Edition) - Bluetooth True Wireless in-Ear Buds with 32 Hours Playtime, Multpoint Technology, Extreme Comfort, and Active Noise Cancellation (Blush Violet)</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<div class="product">
+    <div class="product-content">
+        <img src="ProductImages/Screenshot 2025-03-09 154255.png" alt="Nachos">
+        <div class="product-details">
+            <h3></h3>
+            <p>for CMF Buds Case Cover, Hard PC Shell Clear Protective Earbuds Case, Only Compatible with CMF Buds, Headphones Case with Lanyard Accessories Set</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<div class="product">
+    <div class="product-content">
+        <img src="ProductImages/Screenshot 2025-03-09 154517.png" alt="Nachos">
+        <div class="product-details">
+            <h3></h3>
+            <p>CMF Watch Pro 2025 Upgrade Smart Watch, Fitness Tracker, Heart Rate SpO2 Sleep Monitor,1.96" AMOLED Display, Bluetooth Calls with AI Noise Reduction,13 Days Long Battery, IP68 Water Resistance (Black)</p>
+            <p><button>buy $14</button>&nbsp;&nbsp;<button>Add to Cart</button></p>
+        </div>
+    </div>
+</div>
+
+<div class="product">
+    <div class="product-content">
+        <img src="ProductImages/Screenshot 2025-03-09 154741.png" alt="Nachos">
+        <div class="product-details">
+            <h3></h3>
+            <p>CMF Watch Pro 2 Smartwatch for Men Women, Fitness Tracker with Heart Rate, SPO₂ Monitoring,120 Sports Model, Bluetooth Calls with AI Noise Reduction, IP68 Waterproof with GPS for Android iOS Ash Grey</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<div class="product">
+    <div class="product-content">
+        <img src="ProductImages/Screenshot 2025-03-09 154903.png" alt="Nachos">
+        <div class="product-details">
+            <h3></h3>
+            <p>Smartwatch, Built-in Alexa, GPS, VO2 Max, HRV, Blood Oxygen, Sleep Monitoring, Women's Health, Custom Reminders, Sports Tracking, 1.32" AMOLED, Compass, Altimeter (Bluetooth, Gold, 43mm)</p>
+            <div class="button"><button>Add to Cart</button></div>
+        </div>
+    </div>
+</div>
+
         </section>
     </main>
     <footer>
