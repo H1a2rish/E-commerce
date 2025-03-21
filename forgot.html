@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #cccc; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+
+        }
+        .forgot{
+            padding: 20px 30px;
+            box-shadow: 0 4px 8px black;
+            width: 100%;
+            max-width: 400px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        .form-group h2{
+            text-align: center;
+            font-weight: bold;
+            color: blue;
+        }
+        .form-group{
+            text-align: center;
+            font-size: 18px;
+            color:grey;
+        }
+        .form-group input{
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            border: none;
+        }
+        .form-group input{
+            border-color:1px blue;
+            outline: none;
+            box-shadow: 0 0 4px blue;
+        }
+        .btn{
+            width: 100%;
+            margin-top:30px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: blue;
+            font-size: larger;
+            outline: none;
+            border: none;
+            color: white;
+        }
+        .btn:hover{
+            background-color: #0056b3;
+        }
+        p{
+            margin-top: 10px;
+            text-decoration:none;
+            text-align: center;
+            font-size: 18px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="forgot">
+        <form>
+            <div class="form-group">
+                <h2>Forgot Password?</h2>
+                <label for="email">Enter your Email to reset your password</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            </div>
+            <button type="submit" class="btn">Confirm</button>
+            </form>
+            <p><a href="log.html">back to login</a></p>
+    </div>
+</body>
+</html>
