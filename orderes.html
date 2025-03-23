@@ -88,6 +88,12 @@
             width: 100%;
             margin-top: 15px;
         }
+        .proceed-payment {
+            background-color: #ffc107;
+            color: white;
+            width: 100%;
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
@@ -120,6 +126,7 @@
                 <button type="button" class="next" onclick="goNext()">Next</button>
             </div>
             <button type="button" class="place-order" onclick="placeOrder()">Place Order</button>
+            <button type="button" class="proceed-payment" onclick="proceedToPayment()">Proceed to Payment</button>
         </form>
     </div>
 
@@ -149,6 +156,9 @@
             }
             
             alert("Order placed successfully!\n\nProduct: " + product + "\nQuantity: " + quantity + "\nShipping Address: " + address + "\nShipping Method: " + shipping);
+        }
+        function proceedToPayment() {
+            window.location.href = 'payment.html';
         }
     </script>
 </body>
